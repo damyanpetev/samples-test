@@ -5,9 +5,8 @@ script:
 # clone gh-pages
 - git clone -b gh-pages https://$GH_TOKEN@github.com/damyanpetev/samples-test.git dist
 
-# wipe content except .git
-- shopt -s extglob
-- rm -rvf dist/!(.git)
+# wipe content in target folder
+- rm -rf dist/${TRAVIS_BRANCH}
 
 # build
 - gulp build-samples --version ${TRAVIS_BRANCH}
