@@ -1,7 +1,4 @@
-
-        $(function () {
-            $("#grid").igGrid({                
-            });
-        });
-
-    
+$(function () {
+    $("#grid").igGrid({                
+    });
+});

@@ -32,17 +32,17 @@
         $(function () {
                         
             //Sample XML Data
-            var xmlDoc = '<people>' +
-                '<person name="Gustavo Achong">' +
-                    '<details age="42" email="gachong@adventureworks.com">' +
-                '</details></person>' +
-                '<person name="Catherine Abel">' +
-                    '<details age="27" email="cabel@adventureworks.com">' +
-                '</details></person>' +
-                '<person name="Kim Abercrombie">' +
-                    '<details age="33" email="kabercrombie@adventureworks.com">' +
-                '</details></person>' +
-            '</people>';
+            var xmlDoc = '<People>' +
+                '<Person Name="Gustavo Achong">' +
+                    '<Details Age="42" Email="gachong@adventureworks.com" />' +
+                '</Person>' +
+                '<Person Name="Catherine Abel">' +
+                    '<Details Age="27" Email="cabel@adventureworks.com" />' +
+                '</Person>' +
+                '<Person Name="Kim Abercrombie">' +
+                    '<Details Age="33" Email="kabercrombie@adventureworks.com" />' +
+                '</Person>' +
+            '</People>';
 
             //Binding to XML requires a schema to define data fields
             var xmlSchema = new $.ig.DataSchema("xml",
