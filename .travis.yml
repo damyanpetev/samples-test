@@ -17,7 +17,7 @@ script:
 - git config user.name "igniteui-deploy"
 
 # commit
-- git add -all
+- git add --all
 - if [ -n "$(git status --porcelain)" ]; then git commit -m "Release ${TRAVIS_BRANCH}"; fi
 - git push -fq origin gh-pages --tags
 
